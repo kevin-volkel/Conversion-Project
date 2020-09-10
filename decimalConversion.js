@@ -1,5 +1,4 @@
 let decimal = Number(prompt("Type any whole number."));
-let binary;
 
 let hexa1 = Math.floor(decimal/16);
 let remainder1 = decimal%16;
@@ -41,6 +40,23 @@ if(remainder2 == 15){
     remainder2 = "F";
 }
 
+let binaryRemainder1 = binary % 2;
+let binary = decimal / 2;
+let binaryRemainder2 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder3 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder4 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder5 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder6 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder7 = binary % 2;
+binary = decimal / 2;
+let binaryRemainder8 = binary % 2;
+binary = decimal / 2;
 
+console.log(`The number in binary is ${binary}`);
 console.log(`The number in hexadecimal is ${remainder2}${remainder1}`)
 
