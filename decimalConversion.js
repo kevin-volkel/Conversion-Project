@@ -1,4 +1,6 @@
 let decimal = prompt("Type any whole number.");
+let binaryDecimal = decimal;
+
 
 let hexa1 = Math.floor(decimal/16);
 let hexRemainder1 = decimal%16;
@@ -48,46 +50,47 @@ let binaryRemainder5 = 0;
 let binaryRemainder6 = 0;
 let binaryRemainder7 = 0;
 let binaryRemainder8 = 0;
-if(decimal >= 128)
+if(binaryDecimal >= 128)
 {
-    decimal -= 128;
+    binaryDecimal -= 128;
     binaryRemainder1=1;    
 }
-if(decimal >= 64)
+if(binaryDecimal >= 64)
 {
-    decimal -= 64;
+    binaryDecimal -= 64;
     binaryRemainder2 = 1;
 }
-if(decimal >= 32)
+if(binaryDecimal >= 32)
 {
-    decimal -= 32;
+    binaryDecimal -= 32;
     binaryRemainder3 = 1;
 }
-if(decimal >= 16)
+if(binaryDecimal >= 16)
 {
-    decimal -= 16;
+    binaryDecimal -= 16;
     binaryRemainder4 = 1;
 }
-if(decimal >= 8)
+if(binaryDecimal >= 8)
 {
-    decimal -= 8;
+    binaryDecimal -= 8;
     binaryRemainder5 = 1;
 }
-if(decimal >= 4)
+if(binaryDecimal >= 4)
 {
-    decimal -= 4;
+    binaryDecimal -= 4;
     binaryRemainder6 = 1;
 }
-if(decimal >= 2)
+if(binaryDecimal >= 2)
 {
-    decimal -= 2;
+    binaryDecimal -= 2;
     binaryRemainder7 = 1
 }
-if(decimal >= 1)
+if(binaryDecimal >= 1)
 {
-    decimal -= 1;
+    binaryDecimal -= 1;
     binaryRemainder8 = 1;
 }
-console.log(`The number in binary is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 
-console.log(`The number in hexadecimal is ${hexRemainder2}${hexRemainder1}`)
+console.log(`The binary of ${decimal} is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
+
+console.log(`The hexa-decimal of ${decimal} is ${hexRemainder2}${hexRemainder1}`)
