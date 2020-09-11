@@ -40,23 +40,55 @@ if(remainder2 == 15){
     remainder2 = "F";
 }
 
-let binary = decimal / 2;
-let binaryRemainder1 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder2 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder3 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder4 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder5 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder6 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder7 = binary % 2;
-binary = decimal / 2;
-let binaryRemainder8 = binary % 2;
-binary = decimal / 2;
+let binaryRemainder1;
+let binaryRemainder2;
+let binaryRemainder3;
+let binaryRemainder4;
+let binaryRemainder5;
+let binaryRemainder6;
+let binaryRemainder7;
+let binaryRemainder7;
+if(decimal >= 128)
+{
+    decimal -= 128;
+    binaryRemainder1=1;    
+}
+if(decimal >= 64)
+{
+    decimal -= 64;
+    binaryRemainder2 = 1;
+}
+if(decimal >= 32)
+{
+    decimal -= 32;
+    binaryRemainder3 = 1;
+}
+if(decimal >= 16)
+{
+    decimal -= 16;
+    binaryRemainder4 = 1;
+}
+if(decimal >= 8)
+{
+    decimal -= 8;
+    binaryRemainder5 = 1;
+}
+if(decimal >= 4)
+{
+    decimal -= 4;
+    binaryRemainder6 = 1;
+}
+if(decimal >= 2)
+{
+    decimal -= 2;
+    binaryRemainder7 = 1
+}
+if(decimal >= 1)
+{
+    decimal -= 1;
+    binary1 = 1;
+}
+console.log(`The number in binary is ${binary128}${binary64}${binary32}${binary16} ${binary8}${binary4}${binary2}${binary1}`);
 
 console.log(`The number in binary is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4}${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 console.log(`The number in hexadecimal is ${remainder2}${remainder1}`)
