@@ -90,6 +90,7 @@ if(decimal >= 1)
     decimal -= 1;
     binaryRemainder8 = 1;
 }
-console.log(`The number in binary is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 
-console.log(`The number in hexadecimal is ${hexRemainder2}${hexRemainder1}`)
+console.log(`The binary of ${decimal} is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
+
+console.log(`The hexa-decimal of ${decimal} is ${hexRemainder2}${hexRemainder1}`)
