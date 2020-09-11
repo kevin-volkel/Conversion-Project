@@ -40,8 +40,9 @@ if(remainder2 == 15){
     remainder2 = "F";
 }
 
-let binaryRemainder1 = binary % 2;
 let binary = decimal / 2;
+let binaryRemainder1 = binary % 2;
+binary = decimal / 2;
 let binaryRemainder2 = binary % 2;
 binary = decimal / 2;
 let binaryRemainder3 = binary % 2;
@@ -57,6 +58,6 @@ binary = decimal / 2;
 let binaryRemainder8 = binary % 2;
 binary = decimal / 2;
 
-console.log(`The number in binary is ${binary}`);
+console.log(`The number in binary is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4}${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 console.log(`The number in hexadecimal is ${remainder2}${remainder1}`)
 
