@@ -1,6 +1,5 @@
 let decimal = Number(prompt("Type any whole number."));
 
-
 let hexa1 = Math.floor(decimal/16);
 let hexRemainder1 = decimal%16;
 let hexRemainder2 = Math.floor(hexa1%16); 
@@ -41,7 +40,57 @@ if(hexRemainder2 == 15){
     hexRemainder2 = "F";
 }
 
+let binaryRemainder1;
+let binaryRemainder2;
+let binaryRemainder3;
+let binaryRemainder4;
+let binaryRemainder5;
+let binaryRemainder6;
+let binaryRemainder7;
+let binaryRemainder7;
+if(decimal >= 128)
+{
+    decimal -= 128;
+    binaryRemainder1=1;    
+}
+if(decimal >= 64)
+{
+    decimal -= 64;
+    binaryRemainder2 = 1;
+}
+if(decimal >= 32)
+{
+    decimal -= 32;
+    binaryRemainder3 = 1;
+}
+if(decimal >= 16)
+{
+    decimal -= 16;
+    binaryRemainder4 = 1;
+}
+if(decimal >= 8)
+{
+    decimal -= 8;
+    binaryRemainder5 = 1;
+}
+if(decimal >= 4)
+{
+    decimal -= 4;
+    binaryRemainder6 = 1;
+}
+if(decimal >= 2)
+{
+    decimal -= 2;
+    binaryRemainder7 = 1
+}
+if(decimal >= 1)
+{
+    decimal -= 1;
+    binary1 = 1;
+}
+console.log(`The number in binary is ${binary128}${binary64}${binary32}${binary16} ${binary8}${binary4}${binary2}${binary1}`);
 
-console.log(`The number in hexadecimal is ${hexRemainder2}${hexRemainder1}`)
+console.log(`The number in binary is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4}${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
+console.log(`The number in hexadecimal is ${remainder2}${remainder1}`)
 
 let binary1 = binaryRemainder1 + binaryRemainder2 + binaryRemainder3 + binaryRemainder4
