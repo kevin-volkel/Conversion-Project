@@ -1,4 +1,4 @@
-let decimal = prompt("Type any whole number.");
+let decimal = prompt("Type any whole number!");
 
 let hexa1 = Math.floor(decimal/16);
 let hexRemainder1 = decimal%16;
