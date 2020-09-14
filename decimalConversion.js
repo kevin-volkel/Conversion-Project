@@ -1,5 +1,6 @@
 let decimal = prompt("Type any whole number less than 255.");
 
+//checks to see if number is within range
 if (decimal > 255){
     alert(`Sorry but ${decimal} is over the 255 integer limit.`)
 }else{
@@ -8,10 +9,11 @@ if (decimal > 255){
 
 let binaryDecimal = decimal;
 
-
+//converts to hexa-decimal
 let hexa1 = Math.floor(decimal/16);
 let hexRemainder1 = decimal%16;
 let hexRemainder2 = Math.floor(hexa1%16); 
+//decides if letters are needed
 if(hexRemainder1 == 10){
     hexRemainder1 = "A";
 }
@@ -58,7 +60,7 @@ let binaryRemainder6 = 0;
 let binaryRemainder7 = 0;
 let binaryRemainder8 = 0;
 
-
+//binary conversion: gets remainder, divides to get new number, floor it, repeat
 binaryRemainder8 = binaryDecimal%2;
 binaryDecimal/=2;
 binaryDecimal = Math.floor(binaryDecimal);
@@ -82,6 +84,7 @@ binaryDecimal/=2;
 binaryDecimal = Math.floor(binaryDecimal);
 binaryRemainder1 = binaryDecimal%2;
 
+//output
 console.log(`The binary of ${decimal} is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 
 console.log(`The hexa-decimal of ${decimal} is ${hexRemainder2}${hexRemainder1}`)
