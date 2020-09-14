@@ -1,23 +1,28 @@
 html{
     font-family: verdana;
+    text-align: center;
     background-image: url(https://i.gifer.com/Ir4.gif);
 
 }
 
+/* html makes global changes to the site. dictates font type as well as centers all text. houses bg image too!*/
 
 p.description{
     color: #8987fa;
     font-size: large;
-    text-align: center;
 }
 
+/* html makes global changes to the site. dictates font type as well as centers all text. houses bg image too!*/
+
 h1{
-    text-align: center;
     color: #8987fa;
 }
+
+/* html makes global changes to the site. dictates font type as well as centers all text. houses bg image too!*/
 
 p.credits{
     color: #8987fa;
     font-size: small;
-    text-align: center;
 }
+
+/* html makes global changes to the site. dictates font type as well as centers all text. houses bg image too!*/
