@@ -1,0 +1,28 @@
+html{
+    font-family: verdana;
+    text-align: center;
+    background-image: url(https://i.gifer.com/Ir4.gif);
+
+}
+
+/* Changes font to Verdana. Aligns ALL text to the center. Tiles background image (yes, it's animated). */
+
+p.description{
+    color: #8987fa;
+    font-size: large;
+}
+
+/* Changes color of text for the description paragraph. Increases font size to "large." */
+
+h1{
+    color: #8987fa;
+}
+
+/* Changes color of text for h1. */
+
+p.credits{
+    color: #8987fa;
+    font-size: small;
+}
+
+/* Changes color of text for the credits paragraph. Increases font size to "small." */ 
