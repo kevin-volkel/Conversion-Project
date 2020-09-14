@@ -1,4 +1,11 @@
-let decimal = prompt("Type any whole number.");
+let decimal = prompt("Type any whole number less than 255.");
+
+if (decimal > 255){
+    alert(`Sorry but ${decimal} is over the 255 integer limit.`)
+}else{
+
+
+
 let binaryDecimal = decimal;
 
 
@@ -50,47 +57,32 @@ let binaryRemainder5 = 0;
 let binaryRemainder6 = 0;
 let binaryRemainder7 = 0;
 let binaryRemainder8 = 0;
-if(decimal >= 128)
-{
-    decimal -= 128;
-    binaryRemainder1=1;    
-}
-if(decimal >= 64)
-{
-    decimal -= 64;
-    binaryRemainder2 = 1;
-}
-if(decimal >= 32)
-{
-    decimal -= 32;
-    binaryRemainder3 = 1;
-}
-if(decimal >= 16)
-{
-    decimal -= 16;
-    binaryRemainder4 = 1;
-}
-if(decimal >= 8)
-{
-    decimal -= 8;
-    binaryRemainder5 = 1;
-}
-if(decimal >= 4)
-{
-    decimal -= 4;
-    binaryRemainder6 = 1;
-}
-if(decimal >= 2)
-{
-    decimal -= 2;
-    binaryRemainder7 = 1
-}
-if(decimal >= 1)
-{
-    decimal -= 1;
-    binaryRemainder8 = 1;
-}
+
+
+binaryRemainder8 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder7 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder6 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder5 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder4 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder3 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder2 = binaryDecimal%2;
+binaryDecimal/=2;
+binaryDecimal = Math.floor(binaryDecimal);
+binaryRemainder1 = binaryDecimal%2;
 
 console.log(`The binary of ${decimal} is ${binaryRemainder1}${binaryRemainder2}${binaryRemainder3}${binaryRemainder4} ${binaryRemainder5}${binaryRemainder6}${binaryRemainder7}${binaryRemainder8}`);
 
 console.log(`The hexa-decimal of ${decimal} is ${hexRemainder2}${hexRemainder1}`)
+}
