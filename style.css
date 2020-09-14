@@ -1,0 +1,23 @@
+html{
+    font-family: verdana;
+    background-image: url(https://i.gifer.com/Ir4.gif);
+
+}
+
+
+p.description{
+    color: #8987fa;
+    font-size: large;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #8987fa;
+}
+
+p.credits{
+    color: #8987fa;
+    font-size: small;
+    text-align: center;
+}
